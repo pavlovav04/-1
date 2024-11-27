@@ -1,0 +1,50 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff; /* Светлый фон для приятной атмосферы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+#container {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* Белый фон для контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+h1 {
+    color: #ff5722; /* Яркий цвет заголовка */
+    font-size: 2em; /* Увеличенный размер шрифта */
+}
+
+p {
+    font-size: 1.5em; /* Увеличенный текст для результата */
+    color: #555; /* Серый цвет для текста */
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em; /* Увеличенный размер шрифта для кнопок */
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Зеленая кнопка для предсказания */
+    color: white; /* Белый текст */
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #f44336; /* Красная кнопка для очистки */
+    color: white; /* Белый текст */
+    border: none;
+    cursor: pointer;
+}
+
+.canvas {
+    display: block;
+    margin: 0 auto; /* Центрирование канваса */
+    background-color: #e1f5fe; /* Светло-голубой фон для канваса */
+}

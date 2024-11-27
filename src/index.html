@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    
+    <!-- Imports TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.7.0"></script>
+
+    <!-- Imports tfjs-vis -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+    
+    <title>Рисование цифр</title>
+</head>
+
+<body>
+    
+    <!-- Defines the container with the predict and erase buttons, and the canvas to draw a digit -->
+    <div id="container">
+      
+      <h1>Нарисуйте число</h1>
+      <p id="result">Предсказать: </p>
+      
+      <div>
+        <!-- This button tells the model to return a prediction for the current canvas -->
+        <button type="button" class="btn btn-primary" onclick="predictModel()">Предсказать</button>
+        
+        <!-- This button clears the canvas so that we can draw a new digit -->
+        <button type="button" class="btn btn-secondary" onclick="erase()">Очистить</button>
+      </div>
+      
+      <!-- This defines the canvas on which we can draw a digit. 
+           If the canvas is too small increase the width and height -->
+      <canvas id="canvas" width="386" height="386" class="canvas" style="border:1px solid #b9bfc9; margin-top:25px;"></canvas>
+    </div>
+
+    <!-- Imports the main script file -->
+    <script src="script.js"></script>
+    
+</body>
+  
+</html>
+
